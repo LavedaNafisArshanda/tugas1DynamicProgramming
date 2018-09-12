@@ -30,7 +30,26 @@ public class HitungFibonacci {
             return arshanda[n-1];
                 
             }
+        private static void tampilArsha(int n, BigInteger arshanda) 
+        {
+            System.out.println("Bilangan Fibonacci ke- " + n + " : " + arshanda);
+            
+            
+        }
        
+     public static void main(String[] args) 
+        {   
+        String identitas = "Laveda Nafis Arshanda / X RPL 3 / 19";
+        
+         tampilJudul(identitas);
+         
+        int n = tampilInput();
+          
+        BigInteger arshanda = fibo(n);
+        
+        tampilArsha(n, arshanda);
+        
+        }    
         }
 
 
