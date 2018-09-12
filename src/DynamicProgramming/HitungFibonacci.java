@@ -16,7 +16,21 @@ public class HitungFibonacci {
             int n = arsha.nextInt();
             return n;
         }
-     
+     private static BigInteger fibo(int n) {
+            
+            BigInteger[] arshanda = new BigInteger[n];
+            
+            arshanda[0] = BigInteger.ONE;
+            arshanda[1] = BigInteger.ONE;
+            
+            for (int i = 2; i < n; i++) {
+                arshanda[i] = arshanda[i-1].add(arshanda[i-2]);
+            }
+            
+            return arshanda[n-1];
+                
+            }
+       
         }
 
 
