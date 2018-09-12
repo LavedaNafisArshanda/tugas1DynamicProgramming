@@ -17,6 +17,14 @@ private static int tampilInput() {
     int n = arsha.nextInt();
     return n;
     }
+
+    private static void tampiljudul(String identitas) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    private static void tampilarshanda(int n, BigInteger arshanda) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 int n = tampilInput();
 private static BigInteger fibo(int n) {
      BigInteger[] arshanda = new BigInteger[n];
@@ -31,6 +39,21 @@ private static BigInteger fibo(int n) {
         return arshanda [n-1];
     }
 BigInteger hasil = fibo(n);
+private static void tampilarshanda(int n, String arshanda)
+{
+    System.out.println("Bilangan Fibonacci ke- " + n + " : " + arshanda);
+}
+    public static void main(String[] args) {
+        String identitas = " Laveda Nafis Arshanda / X RPL 3/ 19";
+        
+        tampiljudul(identitas);
+        
+        int n = tampilInput();
+        
+        BigInteger arshanda = fibo(n);
+        
+        tampilarshanda(n, arshanda);
+    }
 
 }
 
