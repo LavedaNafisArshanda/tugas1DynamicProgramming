@@ -8,13 +8,15 @@ public class HitungFibonacci {
         System.out.println("\nHitung Fibonacci");
         System.out.println("1, 1, 2, 3, 5, 8, 13, 21, ... dst.\n");
     }
- public static void main(String[] args) 
-        {   
-        String identitas = "Laveda Nafis Arshanda / X RPL 3 / 19";
-        
-         tampilJudul(identitas);
-      } 
-   
-}
+    private static int tampilInput() {
+            Scanner arsha = new Scanner(System.in);
+            
+            System.out.print("Bilangan ke-: ");
+           
+            int n = arsha.nextInt();
+            return n;
+        }
+     
+        }
 
 
