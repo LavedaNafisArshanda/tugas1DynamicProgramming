@@ -17,6 +17,21 @@ private static int tampilInput() {
     int n = arsha.nextInt();
     return n;
     }
+int n = tampilInput();
+private static BigInteger fibo(int n) {
+     BigInteger[] arshanda = new BigInteger[n];
+     
+     arshanda[0] = BigInteger.ONE;
+     arshanda[1] = BigInteger.ONE;
+     
+     for (int i = 2; i < arshanda.length; i++) {
+         arshanda[i] = arshanda[i-1].add(arshanda[i-0]);
+     }
+       
+        return arshanda [n-1];
+    }
+BigInteger hasil = fibo(n);
+
 }
 
 
